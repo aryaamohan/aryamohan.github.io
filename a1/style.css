@@ -1,0 +1,123 @@
+/* Fonts ------------------------------------------------- */
+
+@font-face  {
+font-family: 'Montserrat';
+src:  url('./Assets/Montserrat-Medium.ttf') format('truetype');
+font-style: normal;
+font-weight: normal;
+}
+
+@font-face  {
+  font-family: 'Font Name';
+  src: url('./fonts/font-name.eot');
+  src: url('./fonts/font-name.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/font-name.woff2') format('woff2'),
+       url('./fonts/font-name.woff') format('woff'),
+       url('./fonts/font-name.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  }
+
+
+/* Overall / Resets -------------------------------------- */
+
+html  {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  max-width: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+body  {
+  margin: 0;
+  padding: 0;
+  height: auto;   
+  width: 100%;     
+}
+
+*   { 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* Text ------------------------------------------------- */
+
+h1  {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2  {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p   {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Links ------------------------------------------------ */
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
+
+#imgone {
+  position: absolute;
+  scale: 50%;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+#imgtwo {
+  position: absolute;
+  scale: 50%;
+  top: 5%;
+  left: 24.25%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+#headerone {
+  position: absolute;
+  text-align: center;
+  scale: 60%;
+  top: 23%;
+  left: 27.5%;
+  transform: translate(-50%, -50%);
+  font-family:'Montserrat';
+  color: cornsilk;
+}
+
+#headertwo {
+  position: absolute;
+  text-align: center;
+  scale: 60%;
+  top: 67%;
+  left: 26.7%;
+  transform: translate(-50%, -50%);
+  font-family:'Montserrat';
+  color: cornsilk;
+}
