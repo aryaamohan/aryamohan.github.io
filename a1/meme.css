@@ -1,0 +1,46 @@
+@font-face  {
+    font-family: 'Gotham';
+    src: url('./index.html');
+    src: url('./Assets/GothamBold.otf') format('embedded-opentype'),
+        url('./Assets/GothamBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    }
+    
+    body{
+    font-family: 'Gotham';
+
+    .text1{
+        position:absolute;
+        top:32%;
+        left:25%;
+        color:#fff;
+        padding:2px;
+    }
+
+    .text2{
+        position:absolute;
+        top:24%;
+        left:25%;
+        color:#fff;
+        padding:1px;
+    }
+
+    #boxa {
+        transform: translate(512px, 1px);
+   }
+
+    #box2 {
+        transform: translate(745px, -370px);
+   }
+
+   #box3 {
+    transform: translate(512px, -370px);
+}
+
+#box4 {
+    transform: translate(745px, -740px);
+}
+
+
+}
