@@ -1,0 +1,230 @@
+/*  Text Boxes ------------------------------------------------ */
+
+.text {
+    background-color: #d8c8b8;
+    color: #8d7966;
+    text-indent: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+
+/*  Input Boxes ------------------------------------------------ */
+
+.inputb {
+    background-color: #d8c8b8;
+    border: 2px solid #8d7966;
+    padding: 10px;
+    margin-left: 10px;
+    width: 45%;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/*  Dropdown Button ------------------------------------------------ */
+
+.dropbtn {
+    background-color: #d8c8b8;
+    color: black;
+    padding: 14px;
+    font-family: monospace;
+    font-size: 20px;
+    border: none;
+    margin: 10px;
+    width: 63%;
+    border-radius: 2.5px;
+    border: 2px solid #8d7966;
+    transition-duration: 0.4s;
+}
+
+.dropbtn:hover {
+    background-color: #8d7966;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/*  Radio Button ------------------------------------------------ */
+
+.radiobtn {
+    border: 2px solid #8d7966;
+    border-radius: 2.5px;
+    display: inline;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 5px;
+    margin: 10px;
+    width: 70%;
+    opacity: 75%;
+    transition-duration: 0.5s;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.radiobtn:hover {
+    opacity: 100%;
+    cursor: pointer;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+}
+
+/*  Enter Buttons ------------------------------------------------ */
+
+.btn {
+    background-color: #d8c8b8;
+    width: 30%;
+    padding: 17px;
+    font-family: monospace;
+    font-size: 20px;
+    border: 2px solid #8d7966;
+    color: black;
+    border-radius: 2.5px;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: #8d7966;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+}
+
+
+/*  Save Button ------------------------------------------------ */
+
+.buttons {
+    border-radius: 2.5px;
+    background-color: #d8c8b8;
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 10px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    border: 2px solid #8d7966;
+    color: black;
+    border-radius: 2.5px;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
+
+.buttons:hover {
+    background-color: #8d7966;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/*  Sliders ------------------------------------------------ */
+
+
+/* The slider itself */
+
+.Sliders {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    margin: 10px;
+    width: 90%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #f8f1e9; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 2.5px;
+}
+
+/* Mouse-over effects */
+
+.Sliders:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+
+
+/* Size slider */
+
+#SizeS::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; /* Slider Shape */
+    background: #8d7966; /* Slider BG */
+    cursor: pointer;
+}
+
+#SizeS::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%; /* Slider Shape */
+    background: #8d7966;
+    cursor: pointer;
+}
+
+
+/* Red slider */
+
+#RSlider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #FA1A0D;
+    cursor: pointer;
+}
+
+#RSlider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #FA1A0D;
+    cursor: pointer;
+}
+
+
+/* Green slider */
+
+#GSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #ABCE30;
+    cursor: pointer;
+}
+
+#GSlider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #ABCE30;
+    cursor: pointer;
+}
+
+
+/* Blue slider */
+
+#BSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #58B4EE;
+    cursor: pointer;
+}
+
+#BSlider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #58B4EE;
+    cursor: pointer;
+}

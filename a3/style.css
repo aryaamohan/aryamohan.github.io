@@ -1,0 +1,193 @@
+/* Overall / Resets -------------------------------------- */
+
+html  {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+body  {
+  margin: 0;
+  padding: 0;
+  height: 100%;   
+  width: 100%;     
+}
+
+*   { 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* Your CSS goes here ------------------------------------------------- */
+
+#main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#canvas {
+  width: 100%;
+  height: 80%;
+  display: block;
+}
+
+#element-row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-left: 30%;
+}
+
+#column-one {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  justify-content: space-evenly;
+}
+
+#column-two {
+  
+  display: flex;
+}
+
+.dropdown {
+  font-family: 'Gotham';
+  background-color: #e9ecef;
+  color: black;
+  font-family: monospace;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #495057;
+  transition-duration: 0.4s;
+  opacity: 0.8;
+}
+
+.dropdown:hover {
+  opacity: 1;
+  background-color: #495057;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+}
+
+
+.radio {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  
+  /* Set the font size and family */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+
+  /* Add some padding and margin for spacing */
+  padding: 16px;
+  margin: 10px;
+  border: 2px solid #495057;
+  opacity: 0.8;
+  /* Set the background color and text color */
+  background-color: #e9ecef;
+  color: #495057;
+  transition: 0.2s;
+  /* Add a border and round corners */
+  
+  border-radius: 5px;
+  width: fit-content;
+  /* Center align text within the radio button group */
+  /* text-align: center; */
+}
+
+/* Styling for individual radio options */
+.radio label {
+  /* Display radio options as block elements to stack them vertically */
+  display: block;
+
+  /* Add some spacing between radio options */
+  
+}
+
+.radio:hover {
+  opacity: 1;
+  background-color: #495057;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+}
+
+
+.slider {
+  display: block;
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  /* margin: 10px; */
+  width: 99.5%; /* Full-width */
+  height: 35px; /* Specified height */
+  background: #e9ecef; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+  transition: .2s; /* 0.2 seconds transition on hover */
+  /* transition: opacity .2s; */
+  border-radius: 2.5px;
+}
+
+/* Mouse-over effects */
+
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 8px 8px 0 rgba(0,0,0,0.19);
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%; /* Slider Shape */
+  background: #495057; /* Slider BG */
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 35px; /* Set a specific slider handle width */
+  height: 35px; /* Slider handle height */
+  border-radius: 50%; /* Slider Shape */
+  background: #495057;
+  cursor: pointer;
+}
+
+#alert {
+  display: none; 
+}
+
+
+@media screen and (max-height: 500px) {
+
+  #main-container {
+    display: none;
+  }
+
+  #alert {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: #495057;
+    color: white;
+  } 
+
+  #alert > h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
